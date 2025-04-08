@@ -1,3 +1,4 @@
+import "./application.css";
 /* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
@@ -14,6 +15,10 @@
 // const images = require.context('./images', true)
 // const imagePath = (name) => images(name, true)
 // Support component names relative to this directory:
-var componentRequireContext = require.context("components", true);
-var ReactRailsUJS = require("react_ujs");
-ReactRailsUJS.useContext(componentRequireContext);
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "../components/App"; // Ensure this path is correct
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);

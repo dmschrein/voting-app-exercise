@@ -1,0 +1,171 @@
+/* 
+   1. Generic Page Layout
+*/
+.page-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Simple utility classes for spacing/padding, etc. */
+.w-full {
+  width: 100%;
+}
+
+/* 
+   2. Header / Branding
+*/
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.site-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.site-logged-in {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* 
+   3. Forms and Inputs
+*/
+.form-section {
+  margin-bottom: 24px;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-field input:focus {
+  outline: none;
+  border-color: #999;
+}
+
+/* Error and message text */
+.error-text {
+  color: red;
+}
+
+.success-text {
+  font-size: 1rem;
+  color: green;
+}
+
+/* 
+   4. Buttons
+*/
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #333;
+}
+
+.btn-half {
+  width: 50%;
+  justify-items: center;
+  align-items: center;
+}
+
+/* 
+   5. Vote Page-Specific Classes
+*/
+
+/* Vote form container */
+.vote-form {
+  margin-bottom: 24px;
+}
+
+/* Each candidate option */
+.vote-option {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Divider line between sections */
+.vote-divider {
+  margin: 24px 0;
+  border: none;
+  border-top: 2px solid #ccc;
+}
+
+/* Text above write-in candidate form */
+.vote-add-new-label {
+  margin-bottom: 8px;
+}
+
+/* Input for new candidate name */
+.vote-writein-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  font-size: 1rem;
+}
