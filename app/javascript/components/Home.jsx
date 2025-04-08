@@ -8,7 +8,6 @@ const Home = ({ setVoterEmail }) => {
   const [error, setError] = useState(null);
 
   const handleSignIn = (data) => {
-    // Transform the submitted data: rename 'zip' to 'zip_code'
     const payload = {
       email: data.email,
       password: data.password,
