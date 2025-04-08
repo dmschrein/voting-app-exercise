@@ -12,20 +12,20 @@ const Vote = ({ voterEmail, setVoterEmail }) => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  // Logout handler
-  const handleLogout = () => {
-    fetch("/api/sessions", {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
-    })
-      .then((res) => res.json())
-      .then(() => {
-        // Clear global state and redirect to home
-        setVoterEmail("");
-        navigate("/");
-      })
-      .catch((err) => console.error("Logout error:", err));
-  };
+  // Logout handler - not implemented (would add back if had more time to debug)
+  // const handleLogout = () => {
+  //   fetch("/api/sessions", {
+  //     method: "DELETE",
+  //     headers: { "Content-Type": "application/json" },
+  //   })
+  //     .then((res) => res.json())
+  //     .then(() => {
+  //       // Clear global state and redirect to home
+  //       setVoterEmail("");
+  //       navigate("/");
+  //     })
+  //     .catch((err) => console.error("Logout error:", err));
+  // };
 
   // Fetch initial vote data when component mounts
   useEffect(() => {
